@@ -106,50 +106,25 @@ keiciamSpalva4()
               </View>
               <View style={styles.flexbox2}>
           
-< Text style ={
-        {
-        padding: 15,
-    width: 150,
-    marginLeft: 15,
-    backgroundColor: this.state.spalva1,
-    textAlign: 'center',
-    fontSize: 26,
-  }
-    }> BOX1 </ Text >
-    < Text style ={
-        {
-        padding: 15,
-    width: 150,
-    marginLeft: 15,
-    backgroundColor: this.state.spalva2,
-    textAlign: 'center',
-    fontSize: 26,
-  }
-    }> BOX2 </ Text >
+
+              < Text style =
+              {[styles.IPHONE,{ backgroundColor: this.state.spalva1}]}
+    > BOX1 </ Text >
+   
+    < Text style =
+    {[styles.IPHONE,{ backgroundColor: this.state.spalva2}]}
+  
+    > BOX2 </ Text >
  
-
-    < Text style ={
-        {
-        padding: 15,
-    width: 150,
-    marginLeft: 15,
-    backgroundColor: this.state.spalva3,
-
-    textAlign: 'center',
-    fontSize: 26,
-  }
-    }> BOX3 </ Text >
-    < Text style ={
-        {
-        padding: 15,
-    width: 150,
-    marginLeft: 15,
-    backgroundColor: this.state.spalva4,
-
-    textAlign: 'center',
-    fontSize: 26,
-  }
-    }> BOX4 </ Text >
+    < Text style =
+    {[styles.IPHONE,{ backgroundColor: this.state.spalva3}]}
+  
+    > BOX3 </ Text >
+    < Text style =
+        {[styles.IPHONE,{ backgroundColor: this.state.spalva4}]}
+     
+  
+    > BOX4 </ Text >
  
 
     
@@ -190,7 +165,13 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent: 'space-around',
     backgroundColor: 'brown'  
-    }
+    },
     
-  
+  IPHONE: {
+    padding: 15,
+    width: 150,
+    marginLeft: 15,
+    textAlign: 'center',
+    fontSize: 26,
+  }
 });
