@@ -18,10 +18,10 @@ const instructions = Platform.select({
  // android: 'Double tap R on your keyboard to reload,\n' +
    // 'Shake o    r press menu button for dev menu',
 });
-var keiciamSpalva = 'blue';
-var keiciamSpalva2 = 'green';
+var keiciamSpalva = 'green';
+var keiciamSpalva2 = 'purple';
 var keiciamSpalva3 = 'magenta';
-var keiciamSpalva4 = 'black';
+var keiciamSpalva4 = 'gray';
 
 export default class App extends Component<{}> {
   constructor()
@@ -37,28 +37,28 @@ export default class App extends Component<{}> {
 }
 keiciamSpalva()
 {
-    var backgroundColor = keiciamojiSp;
+    var backgroundColor = keiciamSpalva ;
     this.setState({
     spalva1: backgroundColor
     })
 }
 keiciamSpalva2()
 {
-    var backgroundColor = keiciamojiSp2;
+    var backgroundColor = keiciamSpalva2;
     this.setState({
     spalva2: backgroundColor
     })
 }
 keiciamSpalva3()
 {
-    var backgroundColor = keiciamojiSp3;
+    var backgroundColor = keiciamSpalva3;
     this.setState({
     spalva3: backgroundColor
     })
 }
 keiciamSpalva4()
 {
-    var backgroundColor = keiciamojiSp4;
+    var backgroundColor = keiciamSpalva4;
     this.setState({
     spalva4: backgroundColor
     })
@@ -71,32 +71,30 @@ keiciamSpalva4()
       <View style={styles.container}>
               <View style={styles.flexbox1}>
              
-              < TouchableOpacity >
+              < TouchableOpacity onPress ={ () => this.keiciamSpalva ()} >
               
               < Text style = { styles.buttonas  } >
                 
               Buttonas1
               </ Text >
               
-              </ TouchableOpacity >
+              </ TouchableOpacity  >
               
-              < TouchableOpacity >
+              < TouchableOpacity onPress ={ () => this.keiciamSpalva2  ()} >
               
               < Text style = { styles.buttonas  } >
-                
               Buttonas2
               </ Text >
               
               </ TouchableOpacity >
-              < TouchableOpacity >
+              < TouchableOpacity onPress ={ () => this.keiciamSpalva3  ()} >
               
               < Text style = { styles.buttonas  } >
-                
               Buttonas3
               </ Text >
               
               </ TouchableOpacity >
-              < TouchableOpacity >
+              < TouchableOpacity onPress ={ () => this.keiciamSpalva4  ()} >
               
               < Text style = { styles.buttonas  } >
                 
@@ -113,7 +111,7 @@ keiciamSpalva4()
         padding: 15,
     width: 150,
     marginLeft: 15,
-    backgroundColor: 'red',
+    backgroundColor: this.state.spalva1,
     textAlign: 'center',
     fontSize: 26,
   }
@@ -123,7 +121,7 @@ keiciamSpalva4()
         padding: 15,
     width: 150,
     marginLeft: 15,
-    backgroundColor: 'red',
+    backgroundColor: this.state.spalva2,
     textAlign: 'center',
     fontSize: 26,
   }
@@ -135,7 +133,8 @@ keiciamSpalva4()
         padding: 15,
     width: 150,
     marginLeft: 15,
-    backgroundColor: 'red',
+    backgroundColor: this.state.spalva3,
+
     textAlign: 'center',
     fontSize: 26,
   }
@@ -145,7 +144,8 @@ keiciamSpalva4()
         padding: 15,
     width: 150,
     marginLeft: 15,
-    backgroundColor: 'red',
+    backgroundColor: this.state.spalva4,
+
     textAlign: 'center',
     fontSize: 26,
   }
