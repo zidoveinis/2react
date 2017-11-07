@@ -1,0 +1,3 @@
+rootProject.name = 'AntrasDarbas'
+
+include ':app'
